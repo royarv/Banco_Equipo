@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.banco.IngresarController"
+            style="-fx-background-color: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);">
+    <VBox alignment="CENTER" spacing="15" prefWidth="360" prefHeight="280" style="-fx-padding: 30;">
+        <Label text="💵 Ingresar Dinero"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1b5e20;" />
+
+        <TextField fx:id="cantidadField" promptText="Cantidad"
+                   style="-fx-font-size: 14px; -fx-padding: 8; -fx-background-radius: 6px; -fx-border-radius: 6px;" />
+
+        <Button text="➕ Ingresar" onAction="#ingresar"
+                style="-fx-background-color: #66bb6a; -fx-text-fill: white; -fx-font-size: 14px;
+                       -fx-padding: 8 20; -fx-background-radius: 6px;" />
+
+        <Label fx:id="mensajeLabel"
+               style="-fx-font-size: 14px; -fx-text-fill: #2e7d32; -fx-padding: 6;" />
+
+        <Button text="⬅ Volver al Menú" onAction="#volverMenu"
+                style="-fx-background-color: #a5d6a7; -fx-text-fill: #004d40; -fx-font-size: 13px;
+                       -fx-padding: 6 16; -fx-background-radius: 6px;" />
+    </VBox>
+</AnchorPane>
